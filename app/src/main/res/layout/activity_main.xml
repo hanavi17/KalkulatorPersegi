@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".MainActivity"
+    android:background="#03A9F4">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Panjang Sisi"
+        android:layout_marginStart="60dp"
+        android:id="@+id/txtSisi"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtSisi"
+        android:id="@+id/editSisi"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editSisi"
+        android:id="@+id/btnOk"
+        android:paddingTop="10dp"
+        android:text="OKE"
+        android:layout_alignEnd="@+id/txtSisi"
+        android:layout_marginStart="70dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luas Persegi"
+        android:layout_below="@+id/btnOk"
+        android:layout_marginStart="120dp"
+        android:id="@+id/txtLuas"
+        android:textSize="25dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLuas"
+        android:id="@+id/editLuas"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keliling Persegi"
+        android:layout_below="@+id/editLuas"
+        android:layout_marginStart="110dp"
+        android:id="@+id/txtKeliling"
+        android:textSize="25dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtKeliling"
+        android:id="@+id/editKeliling"/>
+</RelativeLayout>
